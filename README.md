@@ -44,6 +44,8 @@ Command_Cloud/
 
 ### 1. Build Docker Image
 
+
+### docker build는 command_cloud 내부에서 실행한 뒤에 상위 디렉토리로 가서 screen 부터 실행
 ```bash
 docker build -t create_cc .
 docker run -d -p 5000:5000 --network host create_cc
